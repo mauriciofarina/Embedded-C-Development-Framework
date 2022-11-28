@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Dall Oglio Farina"
+  given-names: "Mauricio"
+  orcid: "https://orcid.org/0000-0002-2541-7238"
+title: "Embedded C Development Framework"
+version: 1.0.0
+date-released: 2022-12-01
+url: "https://github.com/mauriciofarina/Embedded-C-Development-Framework"
