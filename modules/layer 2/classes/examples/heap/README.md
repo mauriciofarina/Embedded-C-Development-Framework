@@ -1,6 +1,6 @@
 # Heap Class
 
-Heap (a.k.a. memory pool) implementations
+Heap (Memory Pool) implementations
 
 
 # Available Classes
