@@ -71,8 +71,6 @@ Novice developers are often included into projects with few (or even none) super
 # Framework Conventions
 
 
-[Development Standard](doc_development_standard.md)
-
 Another common mistake that many Firmware projects present is the lack of development conventions. They, however, have a key importance in well organized environment and allowing the easy comprehension of the developed system. For that reason, the framework establishes a few conventions. Along with that, it is advised that the system architect defines his own conventions.
 
 ## Module Prefixes
@@ -104,3 +102,8 @@ The framework defines the following access modifiers functions:
 
 ## Documentation
 Every module must contain a documentation file. Since supported by most version control systems, the framework recommends the use of Markdown `README.md` files. Developers should provide essential information regarding module specifications, design choices, how-to-use tutorial, examples, reference links and files, state-flow diagrams and any other relevant information. Architects should also define an in-code documentation standard.
+
+
+## Development Guidelines
+
+Architects should provide guidelines for a standard project development. As a suggestion, the Framework provides the following [Development Standard](doc_development_standard.md).
