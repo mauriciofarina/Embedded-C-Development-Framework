@@ -1,12 +1,12 @@
 /**
  * @file dev_name.c
- * @author Mauricio Dall Oglio Farina
+ * @author Your Name
  * @brief Name Device
  */
-// Device Internal Includes
+// Module Includes
 #include "dev_name.h"
 
-// Private Functions Implementation
+// Private Functions Implementations
 static uint32_t add_values(name_t *const handler) {
     return (handler->value_0 + handler->value_1);
 }

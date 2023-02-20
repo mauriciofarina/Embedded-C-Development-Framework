@@ -1,6 +1,6 @@
 /**
  * @file dev_name_private.h
- * @author Mauricio Dall Oglio Farina
+ * @author Your Name
  * @brief Name Device
  */
 // Never forget header guards
@@ -12,11 +12,9 @@
 #include "dev_name.h"
 #include "dev_name_types.h"
 
-// Other Private Internal Headers go here
+// Other Private Headers go here
 
 // Private Defines and Macros go here
-
-// Initialization and Instance Structs go here
 
 // Private Enumerations go here
 

@@ -1,6 +1,6 @@
 /**
  * @file dev_name.h
- * @author Mauricio Dall Oglio Farina
+ * @author Your Name
  * @brief Name Device
  */
 // Never forget header guards
@@ -14,7 +14,7 @@
 #include <stdint.h>
 #include <string.h>
 
-// Other Public Internal Headers go here
+// Other Public Headers go here
 #include "dev_name_types.h"
 
 // Defines and Macros go here
@@ -46,7 +46,7 @@ typedef struct {
 } name_init_t;
 
 // Device Instance Private Variables go here
-// Do Never access these variables directly
+// Do Never access these variables directly outside this module
 /**
  * @brief Device Handler
  */
@@ -59,7 +59,7 @@ typedef struct {
 
 } name_t;
 
-// Other Enumerations and Structs should be declared on dev_name_types.h
+// Other Enumerations and Structs should be declared in dev_name_types.h
 
 // Initialization prototype goes here
 /**

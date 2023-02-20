@@ -1,6 +1,6 @@
 /**
  * @file dev_name_types.h
- * @author Mauricio Dall Oglio Farina
+ * @author Your Name
  * @brief Name Device
  */
 // Never forget header guards
