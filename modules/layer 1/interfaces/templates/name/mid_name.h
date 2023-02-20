@@ -12,10 +12,10 @@
 #include <stdint.h>
 // No other header files should be included here
 
-// Defines and macros goes here
+// Defines and Macros go here
 #define MID_NAME_DEFAULT_VALUE 0 /** Default Value */
 
-// Enumerations goes here
+// Enumerations go here
 /**
  * @brief Name Type
  */
@@ -27,7 +27,7 @@ typedef enum {
 
 } mid_name_type_t; // Prefer singular naming (type instead of types)
 
-// Struct goes here
+// Struct go here
 /**
  * @brief Name Information
  */
@@ -36,7 +36,7 @@ typedef struct {
     uint32_t value;       /** Value */
 } mid_name_info_t;
 
-// Function prototypes goes here
+// Function prototypes go here
 /**
  * @brief Get Name Info
  *

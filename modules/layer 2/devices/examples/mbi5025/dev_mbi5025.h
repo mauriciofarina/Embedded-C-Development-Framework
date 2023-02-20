@@ -24,7 +24,12 @@ typedef struct {
     /**
      * @brief Send SPI Data
      *
-     * @note Blocking Behavior Expected
+     * @details:
+     * - Blocking Behavior Expected
+     * - SPI Data Frame Size: 16 Bits
+     * - SPI Clock Polarity: 0
+     * - SPI Clock Phase: 0
+     * - SPI Clock Max Frequency: 25 MHz
      *
      * @param data[in] Data
      * @param size[in] Size (Bytes)
