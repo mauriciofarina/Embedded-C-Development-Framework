@@ -107,3 +107,17 @@ Every module must contain a documentation file. Since supported by most version 
 ## Development Guidelines
 
 Architects should provide guidelines for a standard project development. As a suggestion, the Framework provides the following [Development Standard](doc_development_standard.md).
+
+
+
+# References: 
+
+---
+**Disclosure**
+
+This framework includes the experience of an extensive number of reference works. In this section, we will list only the most important references that may be used as an appendix for going deeper into this framework.
+
+---
+
+- [QuantumLeaps Object-Oriented C Framework](https://github.com/QuantumLeaps/OOP-in-C)
+- [Barr Group Embedded C Coding Standard](https://barrgroup.com/embedded-systems/books/embedded-c-coding-standard)
