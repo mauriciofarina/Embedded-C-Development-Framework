@@ -118,3 +118,55 @@ uint32_t foo(uint32_t a, uint32_t b){
 }
 
 ```
+
+## **Conditional Scope**
+
+Every condition should always have `{}` to define it's scope limits
+
+```c
+
+//Bad
+if(1 == x)
+    printf("1\n");
+else
+    printf("0\n");
+
+//Good
+if(1 == x) {
+    printf("1\n");
+} else {
+    printf("0\n");
+}
+```
+
+## **Equal Condition**
+
+Equal (`==`) conditions containing a constant should always put the variable as the right comparator.
+This avoid problems where a missing `=` may still result in a valid operation. For Example:
+
+```c
+uint32_t x = 10;
+
+//The developer missed an = in this comparison
+//However, the operation is still valid but the
+//comparison will be incorrect.
+if(x = 100) {
+    printf("Success\n");
+}else {
+    printf("Fail\n");
+}
+```
+
+For that reason, always prefer:
+
+```c
+uint32_t x = 10;
+
+if(100 == x) {
+    printf("Success\n");
+}else {
+    printf("Fail\n");
+}
+```
+
+since, if the developer misses an `=`, this will be an invalid operation and the compiler will accuse an error
