@@ -4,5 +4,5 @@ Besides portability, another framework goal is to facilitate and increase the co
 
 Layer 0 is expected to contain all Hardware-specific implementations and be the only to access or reference the Hardware directly. 
 
-To provide a medium between MCU Project and Core Library, a set of interface functions are provided by layer 1. This functions should be implemented in layer 0 to provide an abstracted access to MCU’s resources, making CORE fully HW decoupled. For this layer, the framework only provides a single rule: **layer 0 can only include headers from layer 1.**
+To provide a medium between MCU Project and Core Library, a set of interface functions are provided by layer 1. This functions should be implemented in layer 0 to provide an abstracted access to MCU’s resources, making Core Library fully HW decoupled. For this layer, the framework only provides a single rule: **layer 0 can only include headers from layer 1.**
 

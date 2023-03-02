@@ -7,6 +7,7 @@ Devices are components that represent Integrated Circuit (IC) peripherals and sh
 |      File Type       |         Style         | Required |
 | :------------------: | :-------------------: | :------: |
 |    Public Header     |     `dev_name.h`      |   Yes    |
+|     Source Code      |     `dev_name.c`      |   Yes    |
 | Public Types Header  |  `dev_name_types.h`   |    No    |
 |    Private Header    | `dev_name_private.h`  |    No    |
 |   Internal Header    | `dev_name_internal.h` |    No    |

@@ -22,6 +22,13 @@
 
 // Private function prototypes goes here
 
+/**
+ * @brief Add Values
+ *
+ * @param handler[in] Handler
+ *
+ * @return uint32_t Result of addition
+ */
 static uint32_t add_values(name_t *const handler);
 
 #endif

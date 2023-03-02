@@ -16,6 +16,18 @@ As a NFC, classes should only contain private elements. Therefore, only the clas
 
 The framework Class implementation was created based on the [QuantumLeaps](https://github.com/QuantumLeaps/OOP-in-C) project. This repository contains a extensive documentation of all OOC features.
 
+## Module Files
+
+|      File Type       |         Style         |           Required           |
+| :------------------: | :-------------------: | :--------------------------: |
+|    Public Header     |     `cls_name.h`      |             Yes              |
+|     Source Code      |     `cls_name.c`      |             Yes              |
+| Public Types Header  |  `cls_name_types.h`   |              No              |
+|    Private Header    | `cls_name_private.h`  |              No              |
+|   Internal Header    | `cls_name_internal.h` |              No              |
+|   Override Header    | `cls_name_override.c` | Only when Overriding Methods |
+| Override Source Code | `cls_name_override.h` | Only when Overriding Methods |
+| README Documentation |      `README.md`      |             Yes              |
 
 # Examples
 - The [example](examples/heap/) provides memory pool child classes (`heap_1`, `heap_2` and `heap_3`) that inherit the `heap` Interface Class
