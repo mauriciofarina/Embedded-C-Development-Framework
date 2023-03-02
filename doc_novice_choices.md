@@ -170,3 +170,29 @@ if(100 == x) {
 ```
 
 since, if the developer misses an `=`, this will be an invalid operation and the compiler will accuse an error
+
+## **Struct Padding**
+
+`struct` padding should always be avoided. For example:
+
+```c
+typedef struct {
+    uint32_t a;
+    uint8_t  b; //Will Add 3 padding bytes in a 32bit architecture
+    uint32_t c;
+} some_struct_t;
+```
+
+A simple solution to this is including the padding space as a not used/reserved item:
+
+```c
+typedef struct {
+    uint32_t a;
+    uint8_t  b;
+    uint8_t not_used[3];
+    uint32_t c;
+} some_struct_t;
+```
+
+Also, compiler modifiers should not be used to solve this problem.
+
