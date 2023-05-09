@@ -1,14 +1,7 @@
 /**
  * @file cls_heap.h
- * @author Mauricio Dall Oglio Farina (mauricio.farina@mobitec.com.br)
+ * @author Mauricio Dall Oglio Farina
  * @brief Heap Interface Class
- * @version 1.0
- * @date 2022-06-23
- *
- * Luminator LATAM Firmware C Code Standard V2.0
- *
- * @copyright Copyright (C) 2022 Luminator Technology Group LLC or its affiliates. All Rights Reserved.
- *
  */
 #ifndef __CLS_HEAP_H__
 #define __CLS_HEAP_H__
@@ -54,8 +47,8 @@ typedef struct {
     uint32_t size; /** Memory Pool Size (Bytes) */
 
     // Multi-Thread Support Functions (Optional)
-    bool (*lock)(void);   /** Lock Mutex Function */
-    void (*unlock)(void); /** Unlock Mutex Function */
+    bool (*lock)(void);         /** Lock Mutex Function */
+    void (*unlock)(void);       /** Unlock Mutex Function */
 
     const struct heap_api *api; /** Overridable API */
 

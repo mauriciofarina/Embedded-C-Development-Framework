@@ -1,14 +1,7 @@
 /**
  * @file cls_heap_2.c
- * @author Mauricio Dall Oglio Farina (mauricio.farina@mobitec.com.br)
+ * @author Mauricio Dall Oglio Farina
  * @brief Heap 2 Class
- * @version 1.0
- * @date 2022-06-23
- *
- * Luminator LATAM Firmware C Code Standard V2.0
- *
- * @copyright Copyright (C) 2022 Luminator Technology Group LLC or its affiliates. All Rights Reserved.
- *
  */
 #include "cls_heap_2.h"
 

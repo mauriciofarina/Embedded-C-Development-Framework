@@ -1,14 +1,7 @@
 /**
  * @file cls_heap_1.h
- * @author Mauricio Dall Oglio Farina (mauricio.farina@mobitec.com.br)
+ * @author Mauricio Dall Oglio Farina
  * @brief Heap 1 Class
- * @version 1.0
- * @date 2022-06-23
- *
- * Luminator LATAM Firmware C Code Standard V2.0
- *
- * @copyright Copyright (C) 2022 Luminator Technology Group LLC or its affiliates. All Rights Reserved.
- *
  */
 #ifndef __CLS_HEAP_1_H__
 #define __CLS_HEAP_1_H__
@@ -37,7 +30,7 @@ typedef struct heap_1_allocation {
  */
 typedef struct {
 
-    heap_init_t super; /** Super Class Initialization */
+    heap_init_t super;               /** Super Class Initialization */
 
     uint32_t item_size;              /** Allocation Item Size (Bytes). Allocations are multiples of this value */
     uint32_t max_allocations;        /** Max Number of Pool Allocations */
@@ -51,7 +44,7 @@ typedef struct {
  */
 typedef struct {
 
-    heap_t super; /** Inherited Class */
+    heap_t super;                    /** Inherited Class */
 
     uint32_t item_size;              /** Allocation Item Size (Bytes). Allocations are multiples of this value */
     uint32_t max_allocations;        /** Max Number of Pool Allocations */
