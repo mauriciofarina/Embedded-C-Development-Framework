@@ -30,9 +30,8 @@ For RTOS projects, the kernel itself should be seen as a third-party library, an
 | README Documentation |     `README.md`      |   Yes    |
 
 ## Examples
-FIXME: Implement
 - The [Filesystem Example](examples/filesystem/) provides the implementation for third-party file systems interface library
-<!-- - The [example](examples/filesystem/) provides the implementation for third-party file systems interface library -->
+- The [i2c](examples/i2c/) provides a thread-safe implementation of I2C communication that can be used by multiple tasks
 
 ## Templates
 FIXME: Implement
