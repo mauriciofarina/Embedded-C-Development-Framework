@@ -34,6 +34,6 @@ For RTOS projects, the kernel itself should be seen as a third-party library, an
 - The [i2c](examples/i2c/) provides a thread-safe implementation of I2C communication that can be used by multiple tasks
 
 ## Templates
-FIXME: Implement
-<!-- - The [template](interfaces/templates/name/) provides the template for all Library Components Implementations -->
+- The [Library Template](templates/library_name) provides the template for all Library Components Implementations
+<!-- FIXME: Implement - The [template](interfaces/templates/name/) provides the template for all Library Components Implementations -->
 
