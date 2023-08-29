@@ -104,11 +104,19 @@ The framework defines the following access modifiers functions:
 Every module must contain a documentation file. Since supported by most version control systems, the framework recommends the use of Markdown `README.md` files. Developers should provide essential information regarding module specifications, design choices, how-to-use tutorial, examples, reference links and files, state-flow diagrams and any other relevant information. Architects should also define an in-code documentation standard.
 
 
-## Development Guidelines
+## Development Standard Guidelines
 
-Architects should provide guidelines for a standard project development. As a suggestion, the Framework provides the following [Development Standard](doc_development_standard.md).
-
-
+1. [Standard Rules](development_standard/doc_standard_rules.md) 
+2. [Formatting](development_standard/doc_formatting_rules.md) 
+3. [Documentation](development_standard/doc_documentation_rules.md) 
+4. [General Rules](development_standard/doc_general_rules.md) 
+5. [Naming Convention](development_standard/doc_naming_rules.md) 
+6. [Modules](development_standard/doc_module_rules.md) 
+7. [Preprocessor](development_standard/doc_preprocessor_rules.md) 
+8. [Variables](development_standard/doc_variable_rules.md)
+9. [Operations](development_standard/doc_operations_rules.md) 
+10. [Statements](development_standard/doc_statement_rules.md) 
+11. [Functions](development_standard/doc_function_rules.md) 
 
 # References: 
 
