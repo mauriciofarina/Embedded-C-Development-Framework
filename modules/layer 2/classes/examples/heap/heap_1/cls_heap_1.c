@@ -37,11 +37,11 @@ static void *heap_1_malloc(heap_t *const handler, uint32_t size);
  */
 static void heap_1_free(heap_t *const handler, void *const pointer);
 
-//*******************************
+// *******************************
 //
 // Private Implementations
 //
-//*******************************
+// *******************************
 
 static heap_1_allocation_t *get_item(heap_1_t *const handler) {
 
@@ -194,11 +194,11 @@ static void heap_1_free(heap_t *const handler, void *const pointer) {
     }
 }
 
-//*******************************
+// *******************************
 //
 // Public Implementations
 //
-//*******************************
+// *******************************
 
 void cls_heap_1_init(heap_1_t *const handler, heap_1_init_t *const init) {
 

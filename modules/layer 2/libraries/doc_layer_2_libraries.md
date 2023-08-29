@@ -35,5 +35,5 @@ For RTOS projects, the kernel itself should be seen as a third-party library, an
 
 ## Templates
 - The [Library Template](templates/library_name) provides the template for all Library Components Implementations
-<!-- FIXME: Implement - The [template](interfaces/templates/name/) provides the template for all Library Components Implementations -->
+
 

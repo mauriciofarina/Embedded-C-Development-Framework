@@ -45,7 +45,7 @@ Besides types, components are separated into three categories (Classes, Devices 
 
 # MCU Project Specifications
 
-The framework’s MCU Project region was designed to support different MCUs. Developers may replace the current MCU Project repository by a different version created for another target MCU. To allow that, the system architect should define the required domain where his Core Library should exist. This should provide all information regarding the portability domain foreseen by this architect. 
+The framework's MCU Project region was designed to support different MCUs. Developers may replace the current MCU Project repository by a different version created for another target MCU. To allow that, the system architect should define the required domain where his Core Library should exist. This should provide all information regarding the portability domain foreseen by this architect. 
 Common domain specifications are: 
 
 - MCU Specifications

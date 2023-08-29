@@ -19,11 +19,11 @@
 extern "C" {
 #endif
 
-//*************************************************
+// *************************************************
 //
 // Customized Implementations
 //
-//*************************************************
+// *************************************************
 
 #ifndef LIB_FILESYSTEM_LITTLEFS_HEAP_SIZE
 #define LIB_FILESYSTEM_LITTLEFS_HEAP_SIZE 400 /** Heap Size (64 bit Items) */
@@ -46,11 +46,11 @@ void *lfs_malloc(size_t size);
 // Deallocate memory, only used if buffers are not provided to littlefs
 void lfs_free(void *p);
 
-//*************************************************
+// *************************************************
 //
 // Unchanged Implementations From lfs_util.c
 //
-//*************************************************
+// *************************************************
 
 // Macros, may be replaced by system specific wrappers. Arguments to these
 // macros must not have side-effects as the macros can be removed for a smaller

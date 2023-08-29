@@ -27,11 +27,11 @@ static void *heap_2_malloc(heap_t *const handler, uint32_t size);
  */
 static void heap_2_free(heap_t *const handler, void *const pointer);
 
-//*******************************
+// *******************************
 //
 // Private Implementations
 //
-//*******************************
+// *******************************
 
 static void *heap_2_malloc(heap_t *const handler, uint32_t size) {
 
@@ -102,11 +102,11 @@ static void heap_2_free(heap_t *const handler, void *const pointer) {
     }
 }
 
-//*******************************
+// *******************************
 //
 // Public Implementations
 //
-//*******************************
+// *******************************
 
 void cls_heap_2_init(heap_2_t *const handler, heap_2_init_t *const init) {
 

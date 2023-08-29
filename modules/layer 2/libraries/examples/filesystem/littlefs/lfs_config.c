@@ -6,11 +6,11 @@
 #ifdef USE_LITTLEFS
 #include "lfs_config.h"
 
-//*************************************************
+// *************************************************
 //
 // Customized Implementations
 //
-//*************************************************
+// *************************************************
 
 #include "heap/cls_heap_1.h"
 
@@ -44,11 +44,11 @@ void lfs_free(void *p) {
     cls_heap_free((heap_t *)&heap, p);
 }
 
-//*************************************************
+// *************************************************
 //
 // Unchanged Implementations From lfs_util.c
 //
-//*************************************************
+// *************************************************
 
 // Software CRC implementation with small lookup table
 uint32_t lfs_crc(uint32_t crc, const void *buffer, size_t size) {
