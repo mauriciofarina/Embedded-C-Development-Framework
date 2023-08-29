@@ -25,3 +25,31 @@
         // Some Code..
     }
     ```
+
+1. **(NFC)** Every non-constant division should be protected to avoid zero divisions.
+
+```c
+// Unsafe
+uint32_t foo(uint32_t a, uint32_t b){
+    return (a / b);
+}
+
+// Safe
+uint32_t foo(uint32_t a, uint32_t b){
+    assert(b != 0);
+    return (a / b);
+}
+
+// Safe
+uint32_t foo(uint32_t a, uint32_t b){
+    
+    uint32_t value = 0;
+
+    if(b != 0){
+        value = (a / b);
+    }
+
+    return value;
+}
+
+```

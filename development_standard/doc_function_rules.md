@@ -2,25 +2,67 @@
 
 1. The `static` keyword should be used to declare all functions that do not need to be visible outside the file where were declared.
 
-1. It is a preferred practice that all functions should have just one exit point and it should be via a `return` at the bottom of the function.
 
-1. **(NFC)** The returning variable should always be placed as function's first line of code.
-   
-1. **(NFC)** It is a preferred practice that all returning variables be initiated with fail/`false`/`0` values. For example:
+1. **(NFC)** Unless Single-Lined, the returning value should always be declared as the function's first line of code. Also, every function should only contain a single exit point (`return`) at the bottom of the function.
 
-```c
-bool foo(uint32_t a, uint32_t b) {
+    ```c
+    uint32_t foo(void) {
 
-    bool result = false;
+        uint32_t value = 0; // Always first line of code
 
-    if ((0 == a) && (0 == b)) {
-        result = true;
+        if (b != 0) {
+            value = (a / b);
+        }
+
+        return value; // Always last line of code
+    }
+    ```
+
+    This will avoid issues where returning values may be undefined on not present. For example:
+
+    ```c
+    // Will Never return if (a == b)
+    uint32_t foo(uint32_t a, uint32_t b) {
+
+        if (a < b) {
+            return 10;
+        }else if (a > b) {
+            return 20;
+        }
+
     }
 
-    return result;
-}
-```
+    // Will Never return if SOME_TAG is not defined
+    uint32_t foo(uint32_t a, uint32_t b) {
+    #ifdef SOME_TAG
+        return (a + b);
+    #endif
+    }
+    ```
+   
+1. **(NFC)** It is a preferred practice that all returning variables be initiated with fail/`false`/`0` values. This allows functions to only result in success after conditions are met. For example:
 
+    ```c
+    bool foo(uint32_t a, uint32_t b) {
+
+        bool result = false;
+
+        if (a < 10) {
+            goto end;
+        }
+
+        if (b > 200) {
+            goto end;
+        }
+
+        if (a != b) {
+            result = (a < b); // Will only process the result here
+        }
+
+    end:
+        return result;
+    }
+    ```
 
 1. A prototype should be declared for each public function in their respective header file.
 

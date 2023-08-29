@@ -1,6 +1,20 @@
 # Variable Rules
 
-1. **(NFC)** All variables should be initialized before use.
+1. **(NFC)** All variables should be initialized before use. This will avoid issues such as:
+
+    ```c
+    // Will return unknown/trash value if (a <= b)
+    uint32_t foo(uint32_t a, uint32_t b) {
+    
+        uint32_t value;
+    
+        if (a > b) {
+            value = (a + b);
+        }
+    
+        return value;
+    }
+    ```
 
 1. **(NFC)** It is always preferable to initialize variables on declaration.
 
@@ -64,6 +78,8 @@
         uint8_t not_used_1[2];
     } foo_t;
     ```
+
+    Also, compiler modifiers should not be used to solve this problem.
 
 1. Appropriate care should be taken to prevent the compiler from altering the intended order of the bits within bit-fields (even if unused, declare variables that sum the total number of bit of the used data type).
 

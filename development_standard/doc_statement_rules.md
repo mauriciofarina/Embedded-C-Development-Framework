@@ -4,24 +4,34 @@
 
 1. Assignments should not be made within an `if` or `else if` test.
 
-1. **(NFC)** When evaluating the equality of a variable against a constant, the constant should always be placed to the left of the equal-to operator (`==`).
+1. **(NFC)** When evaluating the equality of a variable against a constant, the constant should always be placed to the left of the equal-to operator (`==`). This avoid problems where a missing `=` may still result in a valid operation. For Example:
 
     ```c
-    uint32_t *ptr = NULL;
+    uint32_t x = 10;
 
-    if (NULL == ptr) {
-        // Do something..
+    // The developer missed an = in this comparison
+    // However, the operation is still valid but the
+    // comparison will be incorrect.
+    if(x = 100) {
+        printf("Success\n");
+    }else {
+        printf("Fail\n");
     }
-
-    // or
-    uint32_t x = 0;
-
-    if(0 == x) {
-        // Do something..
-    }
-
     ```
 
+    For that reason, always prefer:
+
+    ```c
+    uint32_t x = 10;
+
+    if(100 == x) {
+        printf("Success\n");
+    }else {
+        printf("Fail\n");
+    }
+    ```
+
+    If the developer misses an `=`, the expression will become invalid and the compiler will accuse an error.
 
 1. All `switch` statements should contain a `default` block.
 

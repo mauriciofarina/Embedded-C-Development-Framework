@@ -66,7 +66,7 @@ These requirements are, however, not limited to this list, required or must coex
 
 # Novice Framework Choices (NFC)
 
-Novice developers are often included into projects with few (or even none) supervision of other experienced developers. As a result, these developers may introduce problems to the system or violate the design choices made by the system architect. To address that, the framework ensures the standardization and accuracy for the development process. Also, it provides conventions called [Novice Framework Choices](doc_novice_choices.md), that, solely, aims to guide these developers and prevent their most common mistakes.
+Novice developers are often included into projects with few (or even none) supervision of other experienced developers. As a result, these developers may introduce problems to the system or violate the design choices made by the system architect. To address that, the framework ensures the standardization and accuracy for the development process. Also, it provides conventions called Novice Framework Choice **(NFC)**, that, solely, aims to guide these developers and prevent their most common mistakes.
 
 # Framework Conventions
 
